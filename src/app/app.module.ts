@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { NavigationModule } from 'app/navigation/navigation.module';
 import { DataTableModule } from 'primeng/primeng';
 
 
@@ -13,7 +12,6 @@ import { DataTableModule } from 'primeng/primeng';
   ],
   imports: [
     BrowserModule,
-    NavigationModule,
     DataTableModule
   ],
   providers: [],
