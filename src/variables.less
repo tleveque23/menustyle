@@ -1,0 +1,37 @@
+// Variables
+@main-fuchsia:        #af1180;
+@button-pressed_blue: #e51ab1;
+@main-green: #98CB56;
+@main-red: #E33C4A;
+@active-border: #c0c0c0;
+
+@state-border-color: #a8a8a8;
+@help-red: rgb(227,60,74);
+@help-blue: #0093b7;
+@help-yellow: rgb(255,194,6);
+@help-gray: rgb(209,209,209);
+
+@chart-success-color: rgb(152, 203, 86);
+@chart-failed-color: rgb(227, 60, 74);
+@chart-unscripted-color: rgb(209, 210, 209);
+@chart-skipped-color: rgb(0, 147, 183);
+
+@return-variables-orange: rgb(239,141,34);
+
+// Functions
+.circle(@radius; @borderSize:0; @borderColor: black) {
+  border-radius: 50%;
+  width: @radius;
+  height: @radius;
+  border:@borderSize solid @borderColor;
+}
+
+.centered-circle(@radius; @borderSize:0; @borderColor: black) {
+  .circle(@radius, @borderSize, @borderColor);
+  .centerHorizontally;
+}
+
+.centerHorizontally {
+  margin-left:auto;
+  margin-right:auto;
+}

@@ -1,0 +1,11 @@
+<div id="nav-header" class="nav-header">
+  <a id="nav-askida-logo" (click)="navigate('editor/projects')" class="nav-logo"></a>
+
+  <div class="navigation-bars">
+    <p-menu id="navigation-menu" #menu popup="popup" [model]="items" class="navigation"></p-menu>
+    <button type="button" pButton icon="fa fa-bars" (click)="menu.toggle($event)"></button>
+  </div>
+  <span class="userLabel">Username go here</span>
+</div>
+
+

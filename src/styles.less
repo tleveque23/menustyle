@@ -1,0 +1,714 @@
+@import "variables";
+
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+.nav-header {
+  background: #ffffff;
+  color: #ffffff;
+  height: 45px;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.userLabel {
+  float: right;
+  padding-top: 15px;
+  padding-right: 10px;
+  color: #5b5b5b;
+}
+
+.nav-logo {
+  //background: url(assets/images/askida-ct-banner_2018_05_18.png) transparent no-repeat;
+  background-size: contain;
+  width: 275px;
+  height: 44px;
+  display: inline-block;
+}
+
+.simulate-old-header {
+  height: 33px;
+  background-color: #f5f5f5;
+  padding: 0 10px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #aaa;
+  font-weight: 700;
+  line-height: 33px;
+  color: #666;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+
+
+button.ui-button.ui-widget {
+  background-color: #666;
+  border: 1px solid #666;
+}
+
+
+
+
+.width-100 {
+  width: 100%;
+}
+
+.width-85 {
+  width: 85%;
+}
+
+.width-75 {
+  width: 75%;
+}
+
+/* Input's placeholders style */
+::-webkit-input-placeholder {
+  padding-left: 2px;
+}
+::-moz-placeholder {
+  /* firefox 19+ */
+  padding-left: 2px;
+}
+:-ms-input-placeholder {
+  /* ie */
+  padding-left: 2px;
+}
+input:-moz-placeholder {
+  padding-left: 2px;
+}
+
+p-panel div.ui-panel.ui-widget {
+  border-radius: 0;
+}
+
+div.ui-panel-titlebar.ui-widget-header {
+  background: #f5f5f5;
+}
+div.ui-editor-toolbar.ui-widget-header {
+  background: #f5f5f5;
+  border-radius: 0;
+}
+
+.tiny-button {
+  width: 22px;
+  height: 22px;
+}
+
+.ui-fluid button.ui-button.tiny-button {
+  width: 22px;
+  height: 22px;
+}
+
+a.ui-panel-titlebar-icon.ui-panel-titlebar-toggler {
+  border-radius: 0;
+  width:22px;
+  height: 22px;
+  float: left;
+  margin-top: -1px;
+  margin-left: -5px;
+  margin-right:10px;
+}
+
+.ui-panel a.ui-panel-titlebar-icon.ui-panel-titlebar-toggler span {
+  top: -1px;
+}
+
+.ui-g-1.no-pad, .ui-g-2.no-pad, .ui-g-3.no-pad, .ui-g-4.no-pad,
+.ui-g-5.no-pad, .ui-g-6.no-pad, .ui-g-7.no-pad, .ui-g-8.no-pad,
+.ui-g-9.no-pad, .ui-g-10.no-pad, .ui-g-11.no-pad, .ui-g-12.no-pad {
+  padding: 0;
+}
+
+span.ui-clickable.ui-radiobutton-icon {
+  display: block;
+  font-size: .5em;
+  line-height: inherit;
+  margin-top: -1px;
+}
+
+span.ui-autocomplete.ui-widget input {
+  border-radius: 0;
+}
+
+.section-divider {
+  border-bottom: 1px solid #999999;
+}
+
+div.center-cell-data {
+  text-align: center;
+}
+
+div.center-cell-data .ui-chkbox-box.ui-widget.ui-state-disabled {
+  opacity: 1;
+}
+
+div.right-cell-data {
+  text-align: right;
+}
+
+div.ui-chkbox-box.ui-widget {
+  border-radius: 0;
+}
+
+.col-button {
+  width: 10%;
+  text-align: center;
+}
+
+.col-single-button {
+  width: 5%;
+  text-align: center;
+}
+
+.readonly-editor div div.ui-editor-toolbar.ui-widget-header.ql-toolbar.ql-snow {
+  padding: 0;
+}
+
+.ui-g .smaller-g-row {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.ui-g .thinner-g-row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div.ui-tabview-panels {
+  border: 1px solid lightgray;
+}
+
+legend.ui-fieldset-legend {
+  border-radius: 0;
+  border:1px solid black;
+}
+
+.page-header-html-title * {
+  display: inline;
+}
+
+.col-icon {
+  width: 38px;
+  text-align: center;
+}
+
+.deletedKeyword{
+  background: #B10000;
+  color:white;
+}
+
+.nonEditableStepKeyword {
+  background: #ebedf0;
+}
+
+p-togglebutton.success .ui-togglebutton.ui-button {
+  border: 1px solid @main-green;
+  border-radius: 0;
+}
+
+p-togglebutton.success .ui-togglebutton.ui-button.ui-state-active {
+  background: @main-green;
+}
+
+p-togglebutton.fail .ui-togglebutton.ui-button {
+  border: 1px solid #e33c4a;
+  border-radius: 0;
+}
+
+p-togglebutton.fail .ui-togglebutton.ui-button.ui-state-active {
+  background: #e33c4a;
+}
+
+p-togglebutton.skip .ui-togglebutton.ui-button {
+  border: 1px solid @main-fuchsia;
+  border-radius: 0;
+}
+
+p-togglebutton.skip .ui-togglebutton.ui-button.ui-state-active {
+  background: @main-fuchsia;
+}
+
+.bg-skipped {
+  background: @main-fuchsia;
+}
+
+.bg-primary {
+  background: @main-fuchsia;
+}
+
+/* Fix for the menu bar after clicked state in Chrome */
+div.navigation-bars button.ui-button.ui-widget:focus {
+  background-color: @main-fuchsia;
+  border: 0;
+}
+div.navigation-bars button.ui-button.ui-widget:focus span.fa-bars {
+  color: white;
+}
+
+div.nav-header .applicationStatus-FAILED-div {
+  background-color: #E33C4A;
+}
+div.nav-header .applicationStatus-ERROR-div {
+  background-color: #90007D;
+}
+
+
+div.nav-header .applicationStatus-SKIPPED-div {
+  background-color: @chart-skipped-color;
+}
+/* Overwrites the CSS from the old app and make sure that the new app is using these values */
+app-root {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+p-datalist.borderless div.ui-datalist-content.ui-widget-content {
+  border: 0;
+}
+
+p-datatable div.ui-datatable thead.ui-datatable-thead span.ui-column-title {
+  font-weight: bold;
+}
+
+/* HOTFIX for primeng paginator taking 100% width */
+.ui-fluid p-paginator div.ui-paginator p-dropdown div.ui-dropdown  {
+  width: inherit;
+}
+/* Used to limit the size of the confirmation dialog for the delete of stepKeywords */
+.ui-confirmdialog-message div {
+  max-height: 200px;
+}
+
+.navigation-bars {
+  float: right;
+  display: flex;
+  height: 100%;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+.navigation-bars button.ui-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  font-size: 25px;
+}
+
+p-menu.navigation div.ui-menu {
+  background: white;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.navigation-bars button.ui-button{
+  width: 32px;
+  height: 34px;
+}
+
+//.navigation-bars button.ui-button span.ui-button-icon-left{
+//  //margin-top: -7px;
+//  //margin-left: -15px;
+//}
+
+button.ui-button.action-button {
+  width: 175px;
+  margin-right: 5px;
+}
+
+.name-input-read-only {
+  /* input's text-index + padding-left + left border */
+  padding-left:12px;
+  /* input's height + top border */
+  line-height:29px;
+  /* input's top border*/
+  margin-top:1px;
+  margin-bottom:0px;
+}
+
+.last-execution-date-text {
+  /* input's height + top border */
+  line-height:29px;
+  /* input's top border*/
+  margin-top:1px;
+  margin-bottom:0px;
+}
+
+p-checkbox label.ui-chkbox-label {
+  margin-bottom: 0;
+}
+
+/* To fix the moving text next to a checkbox. We use fix pixel size instead of the default em values */
+.ui-chkbox .ui-chkbox-box {
+  height: 16px;
+  width: 16px;
+}
+
+.center-children {
+  display: flex;
+  align-items: center;
+}
+
+p-dropdown div.ui-dropdown {
+  line-height: 21px;
+}
+
+p-dropdown li.ui-dropdown-item {
+  border-radius: 0;
+}
+
+/* Change the disabled input style. Used by the meta-date fields */
+app-root input:disabled {
+  background-color: #e8e8e8;
+  color: black;
+  line-height: 24px;
+  text-indent: 10px;
+  border: 1px solid #d6d6d6;
+  padding: 2px;
+}
+
+/* Set the inout text color to black */
+app-root input {
+  color: black;
+}
+
+/* Stylise the grey divider between the sections. And add more space after */
+.section-divider {
+  border-bottom: 2px solid #999999;
+  margin-bottom: 15px;
+}
+
+/* Overwrite the editor text color */
+app-root .ui-expanded-row-content .ql-editor {
+  white-space: inherit;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+app-root .ui-editor-content.ql-disabled {
+  background: #e8e8e8;
+  border: 1px solid #d6d6d6;
+}
+
+
+/* Overwrite the disables dropdown style */
+.ui-dropdown.ui-state-disabled {
+  opacity: 1;
+  /* color: red; */
+}
+
+/* Overwrite the disabled dropdown text box */
+.ui-state-disabled > .ui-dropdown-label.ui-inputtext {
+  background: #e8e8e8;
+  /*border: 0px solid #b5b1b1;*/
+  border-radius: 0;
+}
+
+
+div.ui-growl div.ui-growl-item-container span.ui-growl-image {
+  top: 0.45em;
+}
+p-menu#navigation-menu div.ui-menu {
+  min-width: 280px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+p-menu#navigation-menu li.ui-menu-separator {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border: 0;
+  width: 100%;
+}
+
+p-menu#navigation-menu li a {
+  border-radius: 0;
+  padding-left:15px;
+}
+
+ul.dropdown-menu {
+  border-radius: 0;
+  box-shadow: none;
+  top: 30px;
+  margin: 0;
+}
+
+ul.dropdown-menu li a:hover {
+  color: #ffffff;
+  background-color: #a6a6a6;
+}
+
+div.open a.dropdown-toggle.menu-button {
+  box-shadow: none;
+  background-color: #2399e5;
+}
+
+div a.dropdown-toggle.menu-button {
+  line-height: 34px;
+}
+
+div.btn-group.pull-right.open {
+  line-height: 34px;
+}
+
+div.btn-group.pull-right.open ul{
+  margin-top: 4px;
+}
+
+
+/* Styling the breadcrumb */
+.ui-breadcrumb-home {
+  font-size: large;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+p-breadcrumb  .ui-menuitem-text {
+  font-size: large;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* For the last item of the breadcrumb */
+p-breadcrumb [role~='menuitem']:last-of-type {
+  font-style: oblique;
+}
+/* Make sure the pointer of the last item is the default one */
+p-breadcrumb [role~='menuitem']:last-of-type span {
+  cursor: default;
+}
+/* Fix the home icon background */
+p-breadcrumb li .ui-state-active {
+  background: #f1f2f5;
+}
+
+/* Style for unsaved stepKeywords rows */
+.unsavedStepKeywordRow {
+  border: 2px solid #649d82 !important;
+  background: #a2f5d4 !important;
+}
+/* Style for unsaved new stepKeywords rows */
+.unsavedNewStepKeywordRow {
+  border: 2px solid #8a9ddc !important;
+  background: #cddbf5 !important;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+/* Overwrite the tooltip style */
+.ui-tooltip {
+  position: absolute;
+  display: none;
+  padding: .25em .5em;
+  max-width: 66.5em;
+  overflow-wrap: break-word;
+}
+
+.word-break {
+  overflow-wrap: break-word;
+}
+
+.col-status {
+  text-align: center;
+}
+
+/* To remove the hand pointer when only the home is display as the breadcrumb */
+#home-breadcrumb span {
+  cursor: default;
+}
+
+/* To fix firefox Quantum (57) bug in table header (invisible lower border for sortable column */
+p-datatable th {
+  position: static!important;
+}
+
+/* Add hover highlight on the datalits (used in the projects list page) */
+p-datalist li:hover {
+  background: #eeeeee;
+}
+
+/* Used by unamed stepKeywords in the delete confirmation dialog */
+.emptyKw {
+  color: #777;
+  font-style: oblique;
+}
+
+p-confirmdialog button.ui-button {
+  /*border-radius: 0;*/
+}
+
+button.dashboard-new-button {
+  width:2em;
+  background-color: #666;
+  border: 1px solid #666;
+  /*border-radius: 0;*/
+  transition: background-color .2s;
+  color:white;
+  line-height: 14px;
+}
+
+button.dashboard-new-button:hover{
+  border: 1px solid #1f89ce;
+  background: #1f89ce;
+  outline: 0 none;
+  color: #ffffff;
+}
+
+/* ********************** */
+/* Fixes for buttons look */
+
+/* Make sure the icon buttons are square */
+.ui-fluid button.ui-button.ui-button-icon-only {
+  height: 2em;
+}
+
+.ui-fluid button.ui-button.ui-button-icon-only {
+  width: 2em;
+}
+
+button#create-ckw-button {
+  width: 2.5em;
+  height: 2em;
+}
+
+#create-ckw-button span.ui-button-text {
+  padding-left: 5px !important;
+  text-align: left !important;
+}
+
+#create-ckw-button span.ui-button-icon-right {
+  right: 2px;
+}
+
+/* To resize the re-order left pane buttons */
+.ui-orderlist.ui-orderlist-responsive .ui-orderlist-controls {
+  width: 90px;
+}
+
+/* For the drop down buttons, we do not want to have the 2em height */
+.ui-fluid .ui-autocomplete .ui-autocomplete-dropdown.ui-button {
+  height: auto;
+}
+/* ********************** */
+
+/* To make sure long name can fit in error / warning messages */
+.ui-growl-message {
+  overflow-wrap: break-word;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* To set the width of name field. The number of rem must be the same as the maxlength property of the field as defined in the Constants class */
+/* The calculation is based on the uppercase W that is 1.17 time the 'rem' unit, plus the padding (10px), 2 times (=20px) */
+.nameField {
+  width: ~"calc(100*1.33rem + 20px)";
+}
+
+.nameFieldContainer {
+  max-width: ~"calc(100*1.33rem + 40px)";
+}
+
+.projectNameField {
+  width: ~"calc(40*1.33rem + 20px)";
+}
+
+.testPlanNameField {
+  width: ~"calc(75*1.33rem + 20px)";
+}
+
+.testPlanNameFieldContainer {
+  max-width: ~"calc(75*1.33rem + 40px)";
+}
+
+/* Used when displaying the reorder panel for the stepKeywords */
+.keyword-reorder-name {
+  margin-right: 2rem;
+  font-weight: 900;
+}
+
+.keyword-reorder-argument {
+  margin-right: 2rem;
+  color: darkgray;
+}
+
+/* {'max-height':editorReadOnly ? 'calc(50vh - 210px)' : '', 'display':editorReadOnly ? 'flex':'', 'align-items':editorReadOnly ? 'stretch':''} */
+.readOnlyEditorContainer {
+  max-height: ~"calc(50vh - 210px)";
+  display: flex;
+  align-items: stretch;
+}
+
+.readOnlyLargeEditorContainer {
+  max-height: ~"calc(100vh - 225px)";
+  margin-bottom: 5px;
+}
+
+.button-large {
+  width: 80px!important;
+}
+
+
+/* Nouveau thème 2018! */
+.ui-growl-item-container.ui-state-highlight.ui-growl-message-success {
+  background-color: @main-green;
+  border-color: @main-green;
+}
+
+.ui-growl-item-container.ui-state-highlight.ui-growl-message-error {
+  background-color: @main-red;
+  border-color: @main-red;
+}
+
+.ui-button:enabled:hover {
+  border: 1px solid @main-fuchsia !important;
+  background: @main-fuchsia !important;
+}
+
+.ui-button:enabled:active {
+  border: 1px solid @button-pressed_blue!important;
+  background: @button-pressed_blue!important;
+}
+
+.ui-paginator .ui-paginator-page.ui-state-active {
+  background: @main-fuchsia;
+  color: #ffffff;
+  border-color: @main-fuchsia;
+}
+
+.ui-state-highlight {
+  border-color: @main-fuchsia;
+  background: @main-fuchsia;
+  color: #FFFFFF;
+}
+
+.ui-datatable th.ui-state-active {
+  background: @main-fuchsia;
+  color: #ffffff;
+}
+
+.ui-chkbox-box.ui-state-active, .ui-radiobutton-box.ui-state-active {
+  border: 1px solid @active-border;
+  background: @main-fuchsia;
+  color: #FFFFFF;
+}
+
+.ui-chkbox-box.ui-state-focus.ui-state-active {
+  background: @main-fuchsia;
+}
+
+.ui-datatable tbody > tr.ui-widget-content.ui-state-highlight {
+  background-color: @main-fuchsia;
+}
+
+.navigation-bars button.ui-button span.ui-button-icon-left {
+  color: #5b5b5b;
+}
+
+
+
+
+
