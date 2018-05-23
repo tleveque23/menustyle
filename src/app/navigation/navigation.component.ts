@@ -24,14 +24,6 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
 
-    let userProfile = JSON.parse(window.sessionStorage.getItem("userProfile"));
-    if ( userProfile.firstName != null ) {
-      this.userLabel = userProfile.firstName + ' (' + userProfile.username + ')';
-    }
-    else {
-      this.userLabel = userProfile.username;
-    }
-
     this.initMenuItems();
   }
 
